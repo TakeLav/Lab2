@@ -12,3 +12,4 @@ C:\Users\pavlo\source\repos\programming technologies #2\programming technologies
 C:\Users\pavlo\source\repos\programming technologies #2\programming technologies #2\obj\Debug\net8.0\programming technologies #2.pdb
 C:\Users\pavlo\source\repos\programming technologies #2\programming technologies #2\obj\Debug\net8.0\programming technologies #2.genruntimeconfig.cache
 C:\Users\pavlo\source\repos\programming technologies #2\programming technologies #2\obj\Debug\net8.0\ref\programming technologies #2.dll
+C:\Users\pavlo\source\repos\programming technologies #2\programming technologies #2\obj\Debug\net8.0\programming technologies #2.sourcelink.json

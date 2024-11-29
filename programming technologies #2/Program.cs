@@ -2,16 +2,13 @@
 using System.Net.Mail;
 using System.Net.Security;
 
-// Базовый класс
 public class GameObject
 {
-	// Поле для хранения данных GameObject
 	public int getID;
 	public string name;
 	public int getX;
 	public int getY;
 
-	// Конструктор
 	public GameObject(int getID, string name, int getX, int getY)
     {
         this.getID = getID;
@@ -21,15 +18,11 @@ public class GameObject
     }
 }
 
-// Производный класс Unit
 public class Unit : GameObject
 {
-	// Поле для хранения данных Unit
 	public bool isAlive;
 	public float getHp;
 
-
-	// Конструктор
 	public Unit(bool isAlive, float getHp, int getID, string name, int getX, int getY) : base(getID, name, getX, getY)
 	{
 		this.isAlive = true;
@@ -112,7 +105,7 @@ public class Fort: Building, Attacker
 	{
 		if (unit.Alive() && isBuilt())
 		{
-			unit.reciveDamage(20);
+			unit.reciveDamage(10);
 		}
 	}
 }
@@ -139,6 +132,8 @@ class Program
 {
 	static void Main(string[] args)
 	{
-
+		Archer archer = new Archer(true, 100.0f, 1, "gleb", 0, 0);
+		archer.Attack(archer);
+		Console.WriteLine(archer.getHp);
 	}
 }
